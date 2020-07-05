@@ -3,7 +3,7 @@
         build:
                docker:
                       - image: circleci/golang:1.9
-               working_directory: /go/src/github.com/Around
+               working_directory: /go/src/github.com/leyao-z/Around
                steps:
                       - checkout
                       - setup_remote_docker
