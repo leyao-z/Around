@@ -1,13 +1,15 @@
+
 version: 2
- jobs:
-        build:
-               docker:
-                      - image: circleci/golang:1.9
-               working_directory: /go/src/github.com/leyao-z/Around
-               steps:
-                      - checkout
-                      - setup_remote_docker
-                      - run: |
-                             docker build -t zonda114/around .
-                             docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
-                             docker push zonda114/around
+jobs:
+  build:
+    docker:
+      - image: circleci/golang:1.9
+    working_directory: /go/src/github.com/laioffer/Around
+    steps:
+      - checkout
+      - setup_remote_docker
+      - run: |
+          docker build -t your-dockerHub-user/around .
+          docker login -u="$DOCKERHUB_USERNAME" -p="$DOCKERHUB_PASSWORD"
+          docker push your-dockerHub-user/around
+
