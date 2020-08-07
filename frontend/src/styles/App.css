@@ -1,0 +1,47 @@
+@import "~antd/dist/antd.css";
+@import "TopBar.css";
+@import "Main.css";
+@import "Register.css";
+@import "Login.css";
+@import "Gallery.css";
+@import "AroundMarker.css";
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  pointer-events: none;
+  height: 50px;
+  float: left;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  height: 50px;
+  color: white;
+}
+
+.App-title {
+  float: left;
+  padding-top: 15px;
+  font-weight: bold;
+  font-size: 17px;
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
